@@ -6,9 +6,22 @@ driver_lisence = True
 
 user_input=""
 print("Type 'exit' to quit the loop: ")
-while user_input !="exit":
-    user_input = input("Exit? ")
-    age = int(input("Please enter your age: "))
+while user_input !="exit":              ## Start of while loop which asks the user for input until "exit" is inputted
+
+    user_input = input("Exit? ")        ## Asks User if they want to exit.
+    if (user_input == "exit"):          ## Checks if the user inputted 'exit'. If so, breaks the while loop and exits
+        break
+
+
+    age = int(input("Please enter your age: "))                         ## Asks user for their age and casts it as int
+    drv_lic_input = (input("Do you have a driver license? (Y/N)"))      ## Asks user for if they have a driver license.
+
+
+    if(drv_lic_input.lower()=="y"):             ## Checks for if the user said they have driver license
+        driver_lisence = True                   ## and updates the 'driver_lisence' variable accordingly
+    else:
+        driver_lisence = False
+
 
     if(age > 19 and driver_lisence == True):
         print("You can vote and drive")
@@ -20,6 +33,7 @@ while user_input !="exit":
         print("You can't legally drink but your mates/uncles might have your back...")
     else:
         print("You're too young! Go back to school.")
+
 
 # - You can vote
 # - You can driver
