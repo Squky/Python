@@ -101,16 +101,19 @@ new_age = 24.6
 #   print(number)
 
 
-mylist =["thing1","thing2","things3"]
-
-for element in mylist:
-    # do this code here
-    print(element)
+# mylist =["thing1","thing2","things3"]
+#
+# for element in mylist:
+#     # do this code here
+#     print(element)
 
 # for whateveryouwant_literally in range(0,20,5):
 #     print(whateveryouwant_literally)
 
-
+num =""
+print(type(num))
+if(type(num) != 'int'):
+    print("test")
 
 
 

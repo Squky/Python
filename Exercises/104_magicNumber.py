@@ -10,15 +10,18 @@
 # magic_number =
 
 # I need to ask user for input
-magic_number= int(input("Guess a number: "))
 
+import random
+
+user_number= int(input("Guess a number: "))
+magic_numm= random.randint(1,100)
 # I need to check if this input matches a magic_number
 
-if magic_number== 6:
+if user_number== magic_numm:
     print("Well Done!, You guessed correctly and have won!")
 else:
     print("PSYKE! Thats the wrong number!")
-    print("*Self Fives*")
+print(magic_numm)
 
 # I need to let the user know if the response was write or not
 #self five
